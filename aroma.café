@@ -86,111 +86,48 @@
 
 
         <!-- CARDÁPIO -->
-        <section id="cardapio" class="cardapio">
+        <section class="cardapio">
+    <h2>Nosso Cardápio</h2>
 
-            <h2>Nosso Cardápio</h2>
+    <div class="cardapio-grid">
 
-            <p class="destaque">
-                Alguns dos favoritos dos nossos clientes
-            </p>
+        <div class="cardapio-item">
+            <img src="Café-expresso-1.jpg" alt="Café expresso">
+            <h3>Expresso</h3>
+            <p>Café espresso extraído na hora, blend especial da casa.</p>
+            <span>R$ 6,00</span>
+        </div>
 
-            <div class="tabela-container">
+        <div class="cardapio-item">
+            <img src="cappucino1.jpg" alt="Cappuccino">
+            <h3>Cappuccino Aroma</h3>
+            <p>Espresso, leite vaporizado e canela em pó.</p>
+            <span>R$ 9,50</span>
+        </div>
 
-                <table>
+        <div class="cardapio-item">
+            <img src="prensa francesa.jpg" alt="Prensa francesa">
+            <h3>Prensa Francesa</h3>
+            <p>Café preparado na prensa francesa, servido em bule individual.</p>
+            <span>R$ 12,00</span>
+        </div>
 
-                    <caption>
-                        Itens em destaque — cardápio completo disponível no balcão
-                    </caption>
+         <div class="cardapio-item">
+            <img src="torrada de abacate.jpg" alt="Torrada de Abacate">
+            <h3>Torrada de Abacate</h3>
+            <p>Pão artesanal, abacate amassado, ovo pochê e especiarias.</p>
+            <span>R$ 18,00</span>
+        </div>
 
-                    <thead>
+         <div class="cardapio-item">
+            <img src="bolo de fuba.jpg" alt="Bolo de Fuba">
+            <h3>Bolo de Fubá</h3>
+            <p>Fatia de bolo de fubá cremoso com goiabada.</p>
+            <span>R$ 10,00</span>
+        </div>
 
-                        <tr>
-                            <th>Item</th>
-                            <th>Descrição</th>
-                            <th>Preço</th>
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>Espresso</td>
-
-                            <td>
-                                Café espresso extraído na hora,
-                                blend especial da casa.
-                            </td>
-
-                            <td>
-                                <span class="preco">R$ 6,00</span>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>Cappuccino Aroma</td>
-
-                            <td>
-                                Espresso, leite vaporizado
-                                e canela em pó.
-                            </td>
-
-                            <td>
-                                <span class="preco">R$ 9,50</span>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>Prensa Francesa</td>
-
-                            <td>
-                                Café preparado na prensa francesa,
-                                servido em bule individual.
-                            </td>
-
-                            <td>
-                                <span class="preco">R$ 12,00</span>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>Torrada de Abacate</td>
-
-                            <td>
-                                Pão artesanal, abacate amassado,
-                                ovo pochê e especiarias.
-                            </td>
-
-                            <td>
-                                <span class="preco">R$ 18,00</span>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>Bolo de Fubá</td>
-
-                            <td>
-                                Fatia de bolo de fubá cremoso
-                                com goiabada.
-                            </td>
-
-                            <td>
-                                <span class="preco">R$ 10,00</span>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
+    </div>
+</section>
 
         <!-- DEPOIMENTOS -->
         <section id="depoimentos" class="depoimentos">
