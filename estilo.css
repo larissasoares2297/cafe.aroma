@@ -1,24 +1,3 @@
-/* 
-Parte A — Base 
-1. Crie o estilo.css ligado por <link>. Nada de style inline ou <style> interno. 
-2. Declare um bloco :root com no mínimo 5 variáveis: cor primária (tom de café/marrom ou verde, à 
-sua escolha), cor de destaque, cor de fundo, espaçamento padrão e fonte de título. 
-3. Adicione um reset simples (* { box-sizing: border-box; margin: 0; padding: 0; }) logo após o :root. 
-
-Parte B — Aplicação 
-4. Defina cores de fundo e espaçamento do header/nav, main e footer com as variáveis do :root. 
-5. Estilize os links de navegação (nav a) e adicione um estado :hover visível. 
-6. Crie uma classe reutilizável (ex.: .cardapio-item) para as linhas ou células da tabela de cardápio, 
-deixando preços alinhados à direita. 
-7. Escolha uma tipografia de título e outra de corpo, com fallback genérico, e ajuste line-height para 
-boa legibilidade. 
-8. Estilize inputs, labels e o botão de envio no formulário de reserva, garantindo contraste adequado 
-entre texto e fundo.
-*/
-
-
-/*- aplicar os conceitos no nav e cards de depoimentos do exercício do café */
-
 :root {
     --creme: #f7efe4;
     --creme-claro: #fffaf4;
@@ -208,81 +187,45 @@ section h2 {
    CARDÁPIO
 ========================= */
 
-.cardapio {
-    max-width: 1100px;
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
-
-.destaque {
-    text-align: center;
-    color: var(--caramelo);
-    font-weight: 500;
-    margin-top: -20px;
-    margin-bottom: 30px;
-}
-
-.tabela-container {
-    width: 100%;
-    overflow-x: auto;
-    border-radius: 15px;
-    box-shadow: var(--sombra);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
+.cardapio-item {
     background-color: var(--creme-claro);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    text-align: center;
+    padding-bottom: 20px;
 }
-
-caption {
-    padding: 18px;
-    background-color: var(--marrom);
-    color: var(--creme-claro);
-    font-size: 0.9rem;
+.cardapio-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
-
-thead {
-    background-color: var(--dourado);
-    color: var(--branco);
-}
-
-th,
-td {
-    padding: 18px;
-    text-align: left;
-}
-
-th {
-    font-weight: 600;
-}
-
-tbody tr {
-    border-bottom: 1px solid var(--bege);
-    transition: 0.2s ease;
-}
-
-tbody tr:hover {
-    background-color: #f1e2d1;
-}
-
-td:first-child {
+.cardapio-item h3 {
     font-family: var(--fonte-titulo);
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 18px;
+    color: var(--marrom);
 }
-
-td:last-child {
-    text-align: right;
+.cardapio-item p {
+    color: var(--marrom-claro);
+    margin: 10px 15px;
 }
-
-.preco {
+.cardapio-item span {
     display: inline-block;
-    padding: 6px 12px;
     background-color: var(--marrom);
     color: var(--creme-claro);
+    padding: 7px 14px;
     border-radius: 20px;
     font-weight: 600;
-    white-space: nowrap;
+    margin-top: 8px;
 }
+
 
 
 /* =========================
@@ -429,6 +372,11 @@ footer p {
 }
 
 
+
+
+
+
+
 /* =========================
    CELULAR
 ========================= */
@@ -451,6 +399,9 @@ footer p {
     .sobre img {
         height: 350px;
     }
+    .cardapio-grid {
+    grid-template-columns: 1fr;
+}
 
     nav ul {
         gap: 3px;
