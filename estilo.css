@@ -376,55 +376,6 @@ footer p {
 
 
 
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 768px) {
-
-    .logo h1 {
-        font-size: 2.2rem;
-    }
-
-    section {
-        width: 92%;
-        margin: 60px auto;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .sobre img {
-        height: 350px;
-    }
-    .cardapio-grid {
-    grid-template-columns: 1fr;
-}
-
-    nav ul {
-        gap: 3px;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-    }
-
-    .avaliacoes {
-        grid-template-columns: 1fr;
-    }
-
-    form {
-        padding: 25px;
-    }
-
-    th,
-    td {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
 }
 
 
